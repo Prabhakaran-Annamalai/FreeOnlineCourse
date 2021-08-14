@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<title>Bootsrap</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width:device-width, initial-scale:1.0" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/82f2d2e0a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+crossorigin="anonymous"></script>
+
+<!-- creating navbar-->
+
+<header>
+   <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+	    <div class="container">
+       		<a class="navbar-brand" href="#"><img src="https://banner2.cleanpng.com/20180715/wpl/kisspng-rapid-transit-rio-de-janeiro-metro-logo-m-symbol-images-5b4af015a2c489.3574393715316377816667.jpg" 
+			alt="my website" width="30" height="30" class="d-inline-block align-top"> Free Online Courses</a>
+		    <button type="button" data-toggle="collapse" class="navbar-toggler " data-target="#mytarget">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+	    	<div class="collapse navbar-collapse" id="mytarget">
+		    	<ul class="navbar-nav ml-auto">
+			    	<li class="nav-item"><a class="nav-link" href="bootstrap.html">Home</a></li>
+			   	 	<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>				
+			    	<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>				
+			    	<li class="nav-item"><a class="nav-link" href="#">Documentation</a></li>				
+			    	<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" id="#1dropdown"  href="#" 
+						aria-haspopup="true" aria-expanded="false" >Blog</a>
+						<div class="dropdown-menu" aria-labelledby="1dropdown">
+							<a class="dropdown-item" href="#">Youtube-Link</a>
+							<a class="dropdown-item" href="#">Insta-Link</a>
+							<div class="dropdown-divider"></div>
+				    		<a class="dropdown-item" href="#">All Blogs</a>
+						</div>
+					</li>				
+			   		<li class="nav-item"><a class="nav-link" href="contact_us.html">Contact us</a></li>
+					<li class="nav-item active btn btn-info btn-sm ml-2"><a href="sign_up.html" class="nav-link">Sign up</a></li>
+		    	</ul>
+			</div>
+		</div>		
+    </nav>		
+</header>
+
+<!--creating signup page-->
+
+<div class="container mt-3">
+	<div class="row">
+		<div class="col-md-6 mx-auto">
+			<div class="card" style="background-color:rgb(207, 217, 226);">
+				<div class="card-body font-weight-bold">
+					<div class="form-group">
+						<label for="firstname">Firstname</label>
+						<input type="text" name="firstname" placeholder="Eg:Manisha" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="lastname">Lastname</label>
+						<input type="text" name="lastname" placeholder="Eg:Thangavel" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="age">Age</label>
+						<input type="number" name="age" placeholder="Enter Your Age" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="email">E-mail</label>
+						<input type="email" name="email" placeholder="you@example.com" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" name="password" placeholder="********" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="password">Confirm Password</label>
+						<input type="password" name="password" placeholder="********" class="form-control">
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-success btn-sm btn-block font-weight-bold">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

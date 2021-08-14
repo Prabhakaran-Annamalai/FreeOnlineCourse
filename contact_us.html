@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<title>Bootsrap</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width:device-width, initial-scale:1.0" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/82f2d2e0a4.js" crossorigin="anonymous"></script>
+</head>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+crossorigin="anonymous"></script>
+<body>
+
+<!-- creating navbar-->
+
+<header>
+   <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+	    <div class="container">
+       		<a class="navbar-brand" href="#"><img src="https://banner2.cleanpng.com/20180715/wpl/kisspng-rapid-transit-rio-de-janeiro-metro-logo-m-symbol-images-5b4af015a2c489.3574393715316377816667.jpg" 
+			alt="my website" width="30" height="30" class="d-inline-block align-top"> Free Online Courses</a>
+		    <button type="button" data-toggle="collapse" class="navbar-toggler " data-target="#mytarget">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+	    	<div class="collapse navbar-collapse" id="mytarget">
+		    	<ul class="navbar-nav ml-auto">
+			    	<li class="nav-item"><a class="nav-link" href="bootstrap.html">Home</a></li>
+			   	 	<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>				
+			    	<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>				
+			    	<li class="nav-item"><a class="nav-link" href="#">Documentation</a></li>				
+			    	<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" id="#1dropdown"  href="#" 
+						aria-haspopup="true" aria-expanded="false" >Blog</a>
+						<div class="dropdown-menu" aria-labelledby="1dropdown">
+							<a class="dropdown-item" href="#">Youtube-Link</a>
+							<a class="dropdown-item" href="#">Insta-Link</a>
+							<div class="dropdown-divider"></div>
+				    		<a class="dropdown-item" href="#">All Blogs</a>
+						</div>
+					</li>				
+			   		<li class="nav-item active"><a class="nav-link" href="contact_us.html">Contact us</a></li>
+					<li class="nav-item btn btn-info btn-sm ml-2"><a href="sign_up.html" class="nav-link text-white">Sign up</a></li>
+		    	</ul>
+			</div>
+		</div>		
+    </nav>		
+</header>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6" style="margin-top:35px">
+			<div class="card" style="background-color:lightgrey">
+				<div class="card-header text-center">
+					<h4>Contact us</h4>
+					<p>Please Fill the form in a decent manner</p>
+				</div>
+				<div class="card-body font-weight-bold">
+					<div class="form-group">
+						<label for="fullname">Fullname</label>
+						<input type="text" name="fullname" placeholder="Eg:Manishathangavel" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="email">E-mail</label>
+						<input type="email" name="email" placeholder="you@example.com" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea name="message" id="message" cols="30" rows="5" class="form-control" 
+						placeholder="Enter your query briefly!"></textarea>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn text-white btn-block font-weight-bold" style="background-color:grey">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-5 mt-5">
+			<h4>Frequently Asked Questions : </h4>
+			<p>Have any doubt? Checkout Our FAQ's</p>
+			<div class="card">
+				<div class="card-header">
+				<!--question-->
+					<a href="#question1" data-toggle="collapse" class="card-link">
+					Is all your courses are free?
+					</a>
+				</div>
+				<!--answer-->
+				<div class="collapse" id="question1" data-parent="#accordion">
+					<div class="card-body">
+						Yes, ofcourse! Everything is free!.
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+				<!--question-->
+					<a href="#question2" data-toggle="collapse" class="card-link">
+					How I can contact you?
+					</a>
+				</div>
+				<!--answer-->
+				<div class="collapse" id="question2" data-parent="#accordion">
+					<div class="card-body">
+						Through Email : (prabhuapk1@gmail.com)
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+				<!--question-->
+					<a href="#question3" data-toggle="collapse" class="card-link">
+					I can't able to Sign up?
+					</a>
+				</div>
+				<!--answer-->
+				<div class="collapse" id="question3" data-parent="#accordion">
+					<div class="card-body">
+						If you already Signedin on our website. Please use different mail ID to Sign up
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+				<!--question-->
+					<a href="#question4" data-toggle="collapse" class="card-link">
+					Do you have any app for this?
+					</a>
+				</div>
+				<!--answer-->
+				<div class="collapse" id="question4" data-parent="#accordion">
+					<div class="card-body">
+						Yes, we are on process of developing one!
+					</div>
+				</div>
+			</div>
+			<p class="my-5">If you still have any doubt fill the form and submit</p>
+			<!--<img class="img-fluid" src="https://cdn.pixabay.com/photo/2016/11/11/19/00/call-us-1817506_960_720.png" alt="img">-->
+			<!--<img class="img-fluid" src="https://www.clipartkey.com/mpngs/m/100-1006025_call-centre-transparent-images-png-vector-clipart-call.png" alt="img2">-->
+		</div>
+	</div>
+</div>
+
+<!--footer section-->
+
+<div class="bg-white container" style="margin-top:30px">
+	<div class="float-left mb-4">
+      	<a href="bootstrap.html" class="text-warning">Home</a> << Contact us </br></br>
+		&#169; Free Online Courses 
+	</div>
+</div>
+<hr>
+</body>
+</html>
+		

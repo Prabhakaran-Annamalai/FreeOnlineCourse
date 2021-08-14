@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<title>Bootsrap</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width:device-width, initial-scale:1.0" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/82f2d2e0a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+    crossorigin="anonymous"></script>
+
+<!-- creating navbar -->
+
+<header>
+   <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+	    <div class="container">
+       		<a class="navbar-brand" href="#"><img src="https://banner2.cleanpng.com/20180715/wpl/kisspng-rapid-transit-rio-de-janeiro-metro-logo-m-symbol-images-5b4af015a2c489.3574393715316377816667.jpg" 
+			alt="my website" width="30" height="30" class="d-inline-block align-top"> Free Online Courses</a>
+		    <button type="button" data-toggle="collapse" class="navbar-toggler " data-target="#mytarget">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+	    	<div class="collapse navbar-collapse" id="mytarget">
+		    	<ul class="navbar-nav ml-auto">
+			    	<li class="nav-item"><a class="nav-link" href="bootstrap.html">Home</a></li>
+			   	 	<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>				
+			    	<li class="nav-item active"><a class="nav-link" href="login.html">Login</a></li>				
+			    	<li class="nav-item"><a class="nav-link" href="#">Documentation</a></li>				
+			    	<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" id="#1dropdown"  href="#" 
+						aria-haspopup="true" aria-expanded="false" >Blog</a>
+						<div class="dropdown-menu" aria-labelledby="1dropdown">
+							<a class="dropdown-item" href="#">Youtube-Link</a>
+							<a class="dropdown-item" href="#">Insta-Link</a>
+							<div class="dropdown-divider"></div>
+				    		<a class="dropdown-item" href="#">All Blogs</a>
+						</div>
+					</li>				
+			   		<li class="nav-item"><a class="nav-link" href="contact_us.html">Contact us</a></li>
+					<li class="nav-item btn btn-info ml-2 btn-sm"><a href="sign_up.html" class="nav-link text-white">Sign up</a></li>
+		    	</ul>
+			</div>
+		</div>		
+    </nav>		
+</header>
+
+<!--Creating Login Page-->
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 mx-auto" style="margin-top:100px">
+			<div class="card" style="background-color:rgb(207, 217, 226)">
+				<div class="card-body">
+					<div class="form-group">
+						<label for="email" class="font-weight-bold">Email</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<i class="far fa-envelope input-group-text"></i>
+							</div>
+							<input type="email" name="email" placeholder="you@example.com" class="form-control" required >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="password" class="font-weight-bold">Password</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<i class="fas fa-key input-group-text"></i>
+							</div>
+							<input type="password" name="password" placeholder="********" class="form-control" required >
+						</div>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn-block btn btn-success font-weight-bold">
+						<i class="fas fa-unlock mr-2"></i>Login</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 mx-auto mt-3">
+			<p class="ml-5 font-weight-bold">or<a class="ml-2 btn btn-info btn-sm font-weight-bold" href="#">Forget Password</a></p>
+			<p class="mt-4 ml-5 font-weight-bold">Don't have an account ?
+			<a class="ml-2 btn btn-info btn-sm font-weight-bold" href="sign_up.html">Sign up</a></p>
+		</div>
+	</div>
+</div>
+
+</body>
+
+<!--Creating embed google map
+<iframe width="600" height="500" id="gmap_canvas" 
+src="https://maps.google.com/maps?q=tamilnadu&t=&z=9&ie=UTF8&iwloc=&output=embed"
+frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="img-fluid">
+</iframe>	
+		
